@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: "EB Garamond", serif;
+    
+}
+.container b{
+    color: #7BA4DA;
+}
+.containerLeft
+{
+    display: block;
+    width: 100%;
+    
+    padding-left: 10vw;
+    height: 50%;
+    align-items: center;
+
+}
+.containerRight
+{
+    width: 50%;
+    height: 50%;
+    
+    
+
+}
+.resumeButton
+{
+    padding-left: 5px;
+    text-decoration: none;
+    
+
+}
+.resumeButton button{
+  font-family: "EB Garamond", serif;
+
+  font-size: 30px;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: #7BA4DA;
+  color: #7BA4DA;
+  border-radius: 5px;
+}
+
+.field{
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.billy
+{
+    width: 350px;
+    height: 400px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    
+    justify-content: center;
+    
+    font-size: 35px;
+}
+
+.links img{
+    filter: invert(33%) sepia(95%) saturate(748%) hue-rotate(183deg) brightness(90%) contrast(89%);
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.links{
+    
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

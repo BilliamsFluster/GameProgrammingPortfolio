@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+html, body, #root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #09192E;
+  
+  
+  
+  
+}
+.navigation
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #051121;
+  color: white; 
+  padding: 10px 0;
+  z-index: 1000; 
+  text-align: center; 
+}
+section{
+  background-color: #09192E;
+  height: 50vh;
+}
