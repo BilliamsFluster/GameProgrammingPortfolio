@@ -42,3 +42,6 @@
     list-style-type:none;
     
 }
+.sections ul li:active{
+    color: #7BA4DA;
+}
