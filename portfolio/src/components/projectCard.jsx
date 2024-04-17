@@ -1,8 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "./styles/projects.css";
 
-const ProjectCard = ({ title, description, imageUrl, gifUrl, projectId }) => {
+const ProjectCard = ({ title, description, imageUrl, gifUrl, path }) => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="card">
       {imageUrl && <img src={imageUrl} alt={title} />}
@@ -17,12 +24,7 @@ const ProjectCard = ({ title, description, imageUrl, gifUrl, projectId }) => {
           <p>{description}</p>
         </div>
           <div className="learnMore">
-              <Link to={{
-              pathname: `/project/${projectId}`,
-              state: { title, description } // Passing state
-            }}>
-            <button className="project-button">Learn More</button>
-            </Link>
+            <button className="project-button" onClick={handleLearnMore}>Learn More</button>
           </div>
 
       </div>

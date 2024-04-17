@@ -1,2 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.skills{
+    background-color: #09192E;
+    width: 100vw;
+}
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    height: 50vh;
+    
+    
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-category h2 {
+    margin-bottom: 10px;
+    color: #0077cc; /* Example color */
+}
+
+.skill-item {
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #3d9bdf ;
+    transition: transform 0.3s ease;
+    font-family: "EB Garamond", serif;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #e0e0e0; /* Slightly darker on hover */
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.6;
+}
