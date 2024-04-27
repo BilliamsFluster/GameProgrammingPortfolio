@@ -45,7 +45,7 @@ const Hero = () =>{
                     </div>
                     <div className="heroDescription">
                         I love to solve problems and make the journey fun while doing so. I believe in consistent learning and sharing 
-                    knowledge while maintaining clean, well organized code that helps transform ideas into reality that players can experience
+                    knowledge while maintaining clean, well organized code that helps transform ideas into reality that players can experience.
                     </div>
                     
 

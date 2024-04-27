@@ -36,25 +36,38 @@ const HomeNavigator = ({ onNavigate }) => {
     }
   }, [targetSection, location.pathname]);
 
-  const handleNavigation = (sectionId,) => {
+  const handleNavigation = (sectionId) => {
     if (location.pathname !== '/home') {
+      // Navigate and then directly attempt to scroll
       navigate('/home');
-      setTargetSection(sectionId); // Set the target section to scroll to after navigation
+      // Ensure we give enough time for the DOM to update after navigation
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 0); // You might need to adjust this timeout based on your app's behavior
     } else {
-      const element = document.getElementById(sectionId);
-      const offset = 120;
-      if (element) {
-        
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
+      scrollToSection(sectionId);
     }
   };
+  
+  const scrollToSection = (sectionId) => {
+    console.log(`Attempting to scroll to section: ${sectionId}`);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 120;
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - offset;
+      console.log(`Element found, scrolling to: ${elementPosition}`);
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.log("Element not found:", sectionId);
+    }
+  };
+  
+  
+  
 
   return (
     <div className="navigation">

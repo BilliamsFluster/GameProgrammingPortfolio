@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .container
 {
-    width: 100%;
-    height: 90%;
+    width: 100vw;
+    height: 90vh;
     display: flex;
     
     justify-content: center;
     align-items: center;
     font-family: "EB Garamond", serif;
+    
     
 }
 .container b{
@@ -89,4 +90,80 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
+
+/* iphone*/
+@media only screen 
+  and (min-device-width: 393px) 
+  and (max-device-width: 852px) { 
+    .billy
+{
+    width: 250px;
+    height: 300px;
+}
+.resumeButton button{
+    font-family: "EB Garamond", serif;
+  
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #7BA4DA;
+    color: #7BA4DA;
+    border-radius: 5px;
+  }
+  .links{
+    
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container
+{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: "EB Garamond", serif;
+    
+    
+}
+.heroDescription{
+    display: flex;
+    width: 110%;
+    height: 50%;
+    padding-top: 20px;
+    justify-content: center;
+    
+    font-size: 20px;
+}
+.containerRight
+{
+    width: 50%;
+    height: 30%;
+    
+    
+
+}
+.links img{
+    filter: invert(33%) sepia(95%) saturate(748%) hue-rotate(183deg) brightness(90%) contrast(89%);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+}
+
+/* ipad */
+@media only screen 
+  and (min-device-width: 830px) 
+  and (max-device-width: 1024px) {
+    
+    
+  
+}
+ 

@@ -4,7 +4,7 @@
 
 .navBar
 {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     
@@ -57,3 +57,34 @@
 .sections ul li:active{
     color: #7BA4DA;
 }
+
+
+/* iphone*/
+@media only screen 
+  and (min-device-width: 393px) 
+  and (max-device-width: 852px) { 
+    .sections ul li{
+        text-decoration: none;
+        padding: 0;
+        padding-top: 25px;
+        list-style-type:none;
+        
+        
+    }
+    .sections ul li button {
+        
+        padding: 0;
+        padding-right: 15px
+    };
+  
+}
+
+/* ipad */
+@media only screen 
+  and (min-device-width: 830px) 
+  and (max-device-width: 1024px) {
+    
+    
+  
+}
+ 

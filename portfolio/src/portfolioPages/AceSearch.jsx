@@ -64,13 +64,18 @@ const AceSearch = () =>
                     <div className="introduction">
                         <h1>Introduction</h1>
                         <p>
-                            Survive the Enemies is a Unreal Engine survival game that I built with the main intention of expanding on my knowledge of how to implement a weapon system and inventory system. I also implemented enemy AI and respawning systems that use delegates to make the decision of when to respawn the enemies. 
-                                   
+                            Ace Search is a top-down game developed in a university class called Game-A-Week, where we create a new game each week based on a specific theme. 
+                            The theme for this particular game was "10 Seconds to Live." Initially, it was challenging to conceptualize a game that would fit the theme while remaining 
+                            simple and engaging. The solution was Ace Search, a game where players need to find the ace card within 10 seconds each round. With each new round, 
+                            more cards are spawned, increasing the difficulty.
                         </p>
-                        <h1>Weapon System Approach</h1>
+                        <h1>Card System</h1>
                         <p>
-                            My prior knowledge on implementing weapons was to make each weapon its own class. This is a very straight forward approach but this approach can be quite time consuming and error prone. The approach that I wanted to try out is making one weapon class and a 
-                            data table containing all the weapon data for each weapon entry. Then when the player picks up a weapon the game reads from the selected weapon row and loads in all of the data. This also means that if designers want to implement weapons they just need to add entries to the data table and populate each entry.  
+                            The development of Ace Search began with a focus on the card mechanics. Each card is defined by a suit and a number. To organize the cards efficiently, 
+                            I created four maps, each with a suit as the key and all the numbers in that suit as the values. This setup facilitated the organization of cards for 
+                            spawning and condition checks. The next step was to ensure the ace card spawned in each round. I started by randomizing the number of cards to be 
+                            spawned and then adding them to an array designated for spawning. To guarantee the appearance of an ace, I iterated over the array again; if no ace was 
+                            present, I randomly selected a card and replaced it with an ace. This method ensured that an ace card would spawn in every round.
                         </p>
                         
                     </div>

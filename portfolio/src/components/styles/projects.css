@@ -8,6 +8,7 @@
     justify-content: center;
     gap: 20px; 
     width: 100vw;
+    height: 100%;
     
     background-color: #09192E;
     padding: 10px;
@@ -124,3 +125,34 @@
     align-items: center;
     
   }
+
+  /* iphone*/
+@media only screen 
+and (min-device-width: 393px) 
+and (max-device-width: 852px) { 
+  
+  .projects-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    width: 100vw;
+    height: 300vh;
+    
+    background-color: #09192E;
+    
+    padding: 10px;
+    margin: 0;
+  }
+  
+
+}
+
+/* ipad */
+@media only screen 
+and (min-device-width: 830px) 
+and (max-device-width: 1024px) {
+  
+  
+
+}

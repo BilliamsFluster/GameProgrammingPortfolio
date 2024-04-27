@@ -13,9 +13,7 @@ html, body, #root{
   padding: 0;
   background-color: #09192E;
   
-  
-  
-  
+
 }
 .navigation
 {
@@ -29,8 +27,22 @@ html, body, #root{
   z-index: 1000; 
   text-align: center; 
 }
-section{
-  
-  background-color: #09192E;
-  height: 100vh;
+
+
+/* Customizes the whole scrollbar */
+::-webkit-scrollbar {
+  width: 16px; /* Width of the vertical scrollbar */
+  height: 16px; /* Height of the horizontal scrollbar */
+}
+
+/* Customizes the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #333, #000000); /* Example gradient */
+  border-radius: 8px; /* Rounded corners for the track */
+}
+
+/* Customizes the handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0650f0, #3023ae); /* Example gradient */
+  border-radius: 8px; /* Rounded corners for the thumb */
 }
