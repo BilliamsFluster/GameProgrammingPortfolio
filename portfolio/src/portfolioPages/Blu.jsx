@@ -63,30 +63,31 @@ const Blu = () =>{
                     <div className="introduction">
                         <h1>Introduction</h1>
                         <p>
-                            Blu is a game engine designed primarily to aid in developing lower-level skills essential for game programming. 
-                            I created Blu because, as a game developer, understanding more complex systems can illuminate many of the challenges programmers face. 
-                            Knowing how lower-level systems such as event systems, rendering systems, and overall game engine structure work makes problem-solving more intuitive. 
-                            What benefit would there be in making games if you don't even have a basic understanding of how game engines operate? 
-                            Since I use Unreal Engine for game programming, I aim to learn how to write better code and follow superior standards to improve efficiency 
-                            in both work and time. This is why I decided to create a very basic game engine. Moreover, it's quite intriguing to explore different perspectives, 
-                            which may connect missing pieces of information needed for a breakthrough.
+                        Blu is a custom game engine I developed from scratch to deepen my understanding of core game engine components, 
+                        such as event handling and graphics rendering. The project was instrumental in enhancing my problem-solving abilities and applying theoretical 
+                        knowledge practically in game development.
                         </p>
                         <h1>Event System</h1>
                         <p>
-                            Event systems can be complex, especially within game engines. When I first started implementing the event system in Blu, 
-                            I didn't even know what layers and layer stacks were. Since this was my first game engine in development, much wasn't known at the time of creation. 
-                            My approach to structuring the event system in Blu was straightforward: firstly, I needed to understand layers and layer stacks, which help organize 
-                            the game engine's event system. I learned that when an event is triggered, it passes through each layer, and the layer can choose whether to handle 
-                            that event or not. I have an event class, an event manager class, and an event dispatcher class. Keeping complex systems as simple as possible has 
-                            taught me that simplification can help programmers avoid numerous headaches in the future. This structure has significantly aided my understanding of 
-                            Unreal's event system, enhancing my ability to leverage it more efficiently than in the past.
+                        In designing Blu's event system, I tackled the challenge without prior experience in such architectures. My approach involved studying and implementing 
+                        layers and layer stacks to effectively manage event flow within the engine. I developed a cohesive structure that included an event class, an event 
+                        manager, and an event dispatcher. This configuration ensured efficient event organization and selective processing by different engine layers, 
+                        providing a robust foundation for managing game dynamics.
                         </p>
+                        <img src="static/EventManager.png" alt="EventManager" width={1000}/>
                         <h1>External Dependencies</h1>
                         <p>
-                            This game engine is the first massive project I have been exposed to working on. Managing dependencies is crucial, not only for saving time but also 
-                            for reducing headaches. I came across Premake to handle the dependencies for my game engine. I learned that Premake is quite easy to use and 
-                            incorporate into the project. It helps manage all my dependencies, which include OpenGL, Box2D, YAML, and so on.
+                        Managing external dependencies was critical for Blu’s development. I utilized Premake to handle dependencies essential for graphics and physics, such as OpenGL and 
+                        Box2D. This tool streamlined the setup and integration process, significantly reducing complexity and allowing me to concentrate on enhancing the engine’s core features. 
+                        Mastery of Premake improved my efficiency in managing project dependencies, which was important for the smooth development of Blu.
                         </p>
+                        <h1>2D Renderer Implementation</h1>
+                        <p>
+                        The system initializes specific vertex arrays and buffers for each shape type, ensuring precise data handling for rendering. I configured the buffer layouts to manage attributes such as color, position, and texture coordinates, crucial for the GPU's accurate processing of vertex data.
+                        Dynamic shader management is integral to the module. Shaders are loaded and bound as needed for different drawable objects, with uniforms like transformation matrices and texture slots updated in real-time during rendering. This ensures optimal shader operation.
+                        The rendering process utilizes batch processing, accumulating quads, circles, and lines into single buffers to minimize draw calls, thereby boosting performance. A texture management system allows multiple textures to be bound in a single batch, reducing overhead and enhancing rendering efficiency.
+                        </p>
+                        <img src="static/Renderer.png" alt="Renderer" width={1000}/>
                     </div>
 
                 </div>

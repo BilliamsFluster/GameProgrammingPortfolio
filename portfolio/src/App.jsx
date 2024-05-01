@@ -12,6 +12,7 @@ import Blu from './portfolioPages/Blu'
 import SurviveTheEnemies from './portfolioPages/SurviveTheEnemies'
 import './App.css'
 import AceSearch from './portfolioPages/AceSearch'
+import Avail from './portfolioPages/Avail'
 
 const HomeNavigator = ({ onNavigate }) => {
   const navigate = useNavigate();
@@ -84,17 +85,20 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={
           <>
-            <Hero />
-            <div id="projects"><Projects /></div>
-            <div id="skills"><Skills /></div>
-            <div id="about"><About /></div>
-            <div id="contact"><Contact /></div>
+            <div className="appContainer">
+              <Hero />
+              <div id="projects"><Projects /></div>
+              <div id="skills"><Skills /></div>
+              <div id="about"><About /></div>
+              <div id="contact"><Contact /></div>
+            </div>
           </>
         } />
         <Route path="/visual-save" element={<VisualSave />} />
         <Route path="/blu" element={<Blu />} />
         <Route path="/survive-the-enemies" element={<SurviveTheEnemies />} />
         <Route path="/ace-search" element={<AceSearch />} />
+        <Route path="/avail" element={<Avail />} />
       </Routes>
     </Router>
   );

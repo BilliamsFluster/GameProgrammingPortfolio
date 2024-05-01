@@ -1,31 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-.visualSaveContainer
-{
-    width: 100%;
-    height: 200vh;
+.visualSaveContainer {
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align children to start vertically */
+    align-items: center; /* Center children horizontally */
     background-color: #09192E;
-    
-}
-
-.visualSaveContent
-{
-    padding-bottom: 200px;
-    
-    height: 80%;
-    width: 75%;
-    
-    font-size: 25px;
     font-family: "EB Garamond", serif;
-
-
+    padding: 50px; /* Add padding to top and bottom */
 }
-.video
-{
-   width: 100%;
-   height:400px;
+
+.visualSaveContent {
+    padding: 1rem 0; /* Consistent relative padding */
+    width: 75%; /* Relative width to container */
+    max-width: 1200px; /* Limits maximum width to avoid being too wide */
+    font-size: 25px; /* Specific font size */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+.video, img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Height auto for maintaining aspect ratio */
+    aspect-ratio: 16/9; /* Keeps aspect ratio for videos and images */
+}
+
+h1, p {
+    padding-bottom: 20px; /* Bottom padding for headings and paragraphs */
+}
+
+@media (max-width: 932px) { /* For devices with width <= 932px */
+    .visualSaveContent {
+        width: 90%; /* Slightly more width on smaller screens */
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 430px) { /* For devices with width <= 430px */
+    .visualSaveContent {
+        font-size: 18px; /* Even smaller font size for very small screens */
+    }
 }

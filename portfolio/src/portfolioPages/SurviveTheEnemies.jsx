@@ -64,17 +64,32 @@ const SurviveTheEnemies = () =>
                     <div className="introduction">
                         <h1>Introduction</h1>
                         <p>
-                            Survive the Enemies is a survival game developed in Unreal Engine, created with the primary intention of expanding my knowledge 
-                            in implementing weapon and inventory systems. Additionally, I integrated enemy AI and respawning systems that utilize delegates to decide when to 
-                            respawn enemies.
+                        Survive the Enemies is a survival game I developed in Unreal Engine, focusing on implementing advanced game mechanics including weapon 
+                        and inventory systems, alongside AI and a delegate-controlled respawning system. This project served as both a technical 
+                        challenge and a learning opportunity, enhancing my understanding of Unreal Engine’s capabilities and best practices.
                         </p>
                         <h1>Weapon System Approach</h1>
                         <p>
-                            My prior approach to implementing weapons involved creating a distinct class for each weapon. While straightforward, this method can be time-consuming 
-                            and prone to errors. The approach I opted to explore involves using a single weapon class coupled with a data table that contains all the 
-                            necessary weapon data for each entry. When a player picks up a weapon, the game retrieves and loads the data from the selected weapon's row 
-                            in the data table. This method also simplifies the process for designers, who need only to add entries to the data table and populate each with 
-                            the relevant data.
+                        In previous projects, I utilized individual classes for each weapon type, a method that became cumbersome as game complexity grew. To optimize this, 
+                        I implemented a unified weapon class linked to a data table containing all necessary weapon attributes like damage, ammunition type, and range. This 
+                        approach simplifies weapon management by enabling dynamic attribute assignment when a weapon is picked up, and allows designers to easily update or 
+                        add new weapons directly in the data table. This streamlined process enhances game adaptability, reduces potential errors, and accelerates development.
+                        </p>
+                        <h1>AI System</h1>
+                        <p>
+                        The AI uses Unreal Engine's Perception System, allowing enemies to detect players based on sight and hearing. 
+                        I configured sensory components to trigger AI behaviors through behavior trees, which define logical sequences of actions and 
+                        decisions. Blackboards are used to store and manage runtime data for each AI entity, facilitating complex decision-making and state management.
+                        </p>
+                        <h1>Multidirectional Locomotion System</h1>
+                        <p>
+                        The directional vector calculated from the player is utilized to drive a 2D blend space in Unreal Engine, which controls character animations based on movement direction and 
+                        speed. This vector is calculated each frame and mapped to corresponding axes in the blend space—typically, one axis represents the speed of the character while the other 
+                        represents the direction.
+                        The system processes this vector to adjust the character's animation state dynamically. As the player changes direction or speed, the vector updates, and the blend 
+                        space outputs the appropriate animation by interpolating between available animations (like walking, running, or idle) that best match the current movement vector. 
+                        This setup allows for smooth and responsive transitions between animations, giving a realistic portrayal of movement that aligns closely with the player's intended 
+                        direction and speed.
                         </p>
                         
                     </div>

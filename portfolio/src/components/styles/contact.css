@@ -8,14 +8,15 @@
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
     background-color: #09192E;
     
     
   }
   .contactBox{
     display: flex;
-    width:50%;
+    min-width:50%;
     height: 100%;
     
     
@@ -157,7 +158,7 @@
 
   /* iphone*/
 @media only screen 
-and (min-device-width: 393px) 
+and (min-device-width: 390px) 
 and (max-device-width: 852px) { 
   .contactBox{
     display: block;
@@ -182,6 +183,20 @@ and (max-device-width: 852px) {
 and (min-device-width: 830px) 
 and (max-device-width: 1024px) {
   
-  
+  .contactBox{
+    display: flex;
+    min-width:50%;
+    height: 100%;
+    
+    
+  }
+  .rightContactSection{
+    display: block;
+    padding-left: 30px;
+    width: 100%;
+    
+    
+    
+  }
 
 }

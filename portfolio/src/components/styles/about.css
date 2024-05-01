@@ -5,7 +5,7 @@
 .aboutContainer
 {
     width: 100vw;
-    height: 100vh;
+    
     
     display: flex;
     justify-content: center;
@@ -56,41 +56,13 @@
 
 /* iphone*/
 @media only screen 
-  and (min-device-width: 393px) 
-  and (max-device-width: 852px) { 
-    
-    .aboutContainer
-{
-    width: 100vw;
-    height: 160vh;
-    
-    display: flex;
-    justify-content: center;
-    font-family: "EB Garamond", serif;
-    align-items: center;
-}
-    .aboutMeContainer{
-        width: 100vw;
-        height: 150vh;
-        
-        display: flex;
-        
-        
-    }
+  and (min-device-width: 353px) 
+  and (max-device-width: 852px)
+  {
     .aboutMe{
-        font-size: 25px;
+        
         width: 100%;
         
      }
-  
-}
-
-/* ipad */
-@media only screen 
-  and (min-device-width: 830px) 
-  and (max-device-width: 1024px) {
-    
-    
-  
-}
+  }
  

@@ -46,3 +46,11 @@ html, body, #root{
   background: linear-gradient(to bottom, #0650f0, #3023ae); /* Example gradient */
   border-radius: 8px; /* Rounded corners for the thumb */
 }
+
+.appContainer
+{
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers items horizontally */
+  min-height: 100vh; /* Ensures the container covers at least the viewport height */
+}

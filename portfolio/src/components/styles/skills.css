@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    height: 50vh;
+    min-height: 50vh;
     
     
 }
@@ -55,23 +55,3 @@ li {
 
 
 
-/* iphone*/
-@media only screen 
-  and (min-device-width: 393px) 
-  and (max-device-width: 852px) { 
-    .skills-container {
-        height: 70vh;
-    }
-  
-}
-
-/* ipad */
-@media only screen 
-  and (min-device-width: 830px) 
-  and (max-device-width: 1024px) {
-    .skills-container {
-        height: 70vh;
-    }
-    
-  
-}

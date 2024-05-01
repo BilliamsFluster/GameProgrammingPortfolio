@@ -1,90 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-
-.navBar
-{
+.navBar {
     width: 100vw;
-    height: 100%;
     display: flex;
-    
+    align-items: center; /* Ensures vertical centering of the navigation content */
+    padding: 0 20px; /* Horizontal padding for breathing space */
+    box-sizing: border-box; /* Includes padding in width calculation */
 }
-.name
-{
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-size: 34px;
+
+.navName{
+    display: flex;
+    width: 100%;
 }
 .nameButton
 {
     font-family: "EB Garamond", serif;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 54px; /* Large size for prominence */
+    color: #c0d4ee; /* Light blue for a soft, professional look */
+    margin-right: auto; /* Pushes everything else to the right */
     background-color: transparent;
 }
-.sections{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    justify-content: flex-end;
-   
 
-
-}
-.sections ul{
+.sections {
     display: flex;
-    
+    justify-content: flex-end;
+    flex-grow: 1; /* Takes up any remaining space */
 }
-.sections ul li a{
+
+.sections ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Centers items vertically */
+}
+
+.sections ul li {
+    list-style-type: none;
+    margin: 0 15px; /* Spacing between items */
+}
+
+.sections ul li a, .sections ul li button {
     text-decoration: none;
     font-family: "EB Garamond", serif;
     font-weight: 400;
     font-size: 20px;
     color: white;
-}
-.sections ul li{
-    text-decoration: none;
-    
-    padding: 20px;
-    list-style-type:none;
-    
-}
-.sections ul li button{
     background-color: transparent;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-}
-.sections ul li:active{
-    color: #7BA4DA;
+    border: none;
+    cursor: pointer;
 }
 
+.sections ul li:active, .sections ul li a:hover, .sections ul li button:hover {
+    color: #7BA4DA; /* Light blue on hover for interactivity */
+}
 
-/* iphone*/
-@media only screen 
-  and (min-device-width: 393px) 
-  and (max-device-width: 852px) { 
-    .sections ul li{
-        text-decoration: none;
-        padding: 0;
-        padding-top: 25px;
-        list-style-type:none;
-        
+/* Responsive adjustments */
+@media only screen and (max-width: 852px) {
+    .name {
+        font-size: 28px; /* Smaller font size for smaller devices */
+    }
+
+    .sections ul li {
+        padding: 10px 5%; /* Slight increase in padding for tap targets */
+    }
+
+    .sections ul li a, .sections ul li button {
+        font-size: 18px; /* Smaller font size for better fit */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navBar {
+        flex-direction: column; /* Stacks navigation vertically on very small screens */
+        align-items: center; /* Aligns items to the start */
+    }
+
+
+    
+    .navName {
+        justify-content: center; /* Ensure the name is centered within its container */
         
     }
-    .sections ul li button {
-        
-        padding: 0;
-        padding-right: 15px
-    };
-  
-}
+    .nameButton {
+        font-size: 24px; 
+        margin: 0 auto; 
+        display: block; 
+        background-color: transparent;
+    }
+    
 
-/* ipad */
-@media only screen 
-  and (min-device-width: 830px) 
-  and (max-device-width: 1024px) {
-    
-    
-  
+    .sections ul {
+        justify-content: center; /* Centers navigation items */
+        flex-wrap: wrap; /* Allows items to wrap in small spaces */
+    }
+
+    .sections ul li {
+        padding: 10px; /* Uniform padding */
+    }
 }
- 

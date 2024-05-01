@@ -55,6 +55,8 @@ const Skills = () => {
                         <li className="skill-item">C++</li>
                         <li className="skill-item">C#</li>
                         <li className="skill-item">C</li>
+                        <li className="skill-item">Javascript</li>
+                        
                     </ul>
                 </div>
                 <div className="skill-category">
@@ -75,6 +77,7 @@ const Skills = () => {
                         <li className="skill-item">AI Programming</li>
                         <li className="skill-item">Computer Graphics</li>
                         <li className="skill-item">Gameplay Systems</li>
+                        <li className="skill-item">Gameplay Ability System(GAS) UE5</li>
                     </ul>
                 </div>
                 

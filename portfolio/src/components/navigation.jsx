@@ -23,7 +23,7 @@ const Navigation = ({ onMenuClick }) =>{
     return(
         <>
             <div className="navBar">
-                <div className="name">
+                <div className="navName">
                 <button className = "nameButton" onClick={handleLearnMore}><b>William Wapniarek</b></button>
                      
                 </div>

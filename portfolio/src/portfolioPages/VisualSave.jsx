@@ -64,31 +64,23 @@ const VisualSave = () =>
                     <div className="introduction">
                     <h1>Introduction</h1>
                     <p>
-                        Visual Save is an Unreal Engine plugin that has provided a challenging and insightful opportunity to improve as a game developer. It was created to 
-                        fulfill the requirements of a university course known as SIP (Student Innovation Project). Passing the SIP class is necessary for graduation, and it 
-                        focuses on the creation of innovative projects. Struggling to come up with project ideas, I consulted my professor, Dr. Hue Henry, who proposed a plugin 
-                        that uses Unreal Engine to store game data into images. He is the reason this project exists, and I am thankful for the opportunity to work on it.
+                    Visual Save is an Unreal Engine plugin I developed for a university project under the guidance of Dr. Hue Henry. 
+                    The project merges game development with data security by enabling the saving of game data directly into images, a concept proposed by my professor.
                     </p>
+                    <img src="static/VisualSave.png" alt="VisualSave" width={1000}/>
                     <h1>Encoding and Decoding of Data</h1>
                     <p>
-                        Since Visual Save is a steganography plugin, it needs to encode and decode data within images. Initially, integrating this functionality with 
-                        Unreal Engine posed a challenge, as it was unfamiliar to me. To address this, I opted to use the least significant bit for encoding data and a bit 
-                        mask for decoding. The resulting data is added to a byte array, forming the save game object that was passed into the encoding algorithm. Although 
-                        this method proved successful, I initially overlooked how it would integrate with Unreal Engine. As images in UE5 are treated as textures, this added a 
-                        layer of complexity. My primary concerns were compression and texture format. To mitigate the compression issue, I use PNG images and ensure they are 
-                        not uploaded to sites that compress images. Regarding textures, I have developed functions to create textures from pixel data and save the encoded 
-                        texture data into PNG images stored in a directory local to the game.
+                    I tackled the challenge of integrating data encoding within Unreal Engine, which was initially difficult due to my unfamiliarity with the engine's image 
+                    handling. To address this, I utilized the least significant bit method for encoding, subtly modifying image pixels to embed data without altering visual 
+                    appearance. For decoding, I employed a bitmask technique to retrieve this hidden data, focusing on PNG files to ensure data integrity due to their lossless 
+                    format. Additionally, I crafted custom functions to transform image data into game textures, guaranteeing seamless integration with Unreal Engine.
                     </p>
                     <h1>Drag Drop System</h1>
                     <p>
-                        Visual Save features an integrated drag-and-drop system for uploading encoded images. Initially, I was uncertain how to implement this feature effectively and 
-                        considered using platform-specific libraries. However, after consulting with several tools developers, I learned about external drag-and-drop operations with 
-                        Slate, though unfortunately, UMG does not support external operations, only internal ones. While designing this system, I included the option for users to pass 
-                        in a world object that implements a specific interface to hold the drag-and-drop data. This design not only enhances user comprehension but also adds 
-                        flexibility, allowing users to employ any object they prefer, as long as it adheres to the specified interface. This approach opens up endless possibilities 
-                        for handling the saving and loading processes more dynamically.
-
+                    To improve the plugin's usability, I developed a drag-and-drop system using Unreal Engine's native tools to maintain consistency and enhance integration. 
+                    This system allows users to drag any object that conforms to a specific interface into the game, enhancing flexibility and adaptability for various gaming projects.
                     </p>
+                    <img src="static/DragDrop.png" alt="DragDrop" width={800} />
                     </div>
 
                 </div>
