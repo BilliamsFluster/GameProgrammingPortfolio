@@ -67,6 +67,14 @@ const Blu = () =>{
                         such as event handling and graphics rendering. The project was instrumental in enhancing my problem-solving abilities and applying theoretical 
                         knowledge practically in game development.
                         </p>
+                        <h1> Scripting System</h1>
+                        <p>
+                        Blu's game engine integrates a Mono-based C# scripting system that allows for dynamic script loading and execution without engine restarts. This system compiles 
+                        C# scripts into .NET assemblies, enabling real-time script updates. A separate solution enhances this setup, linking C# scripting directly with Blu's core 
+                        functionalities like scene management and entity handling, allowing scripts to manipulate game objects and perform complex operations efficiently. 
+                        This integration ensures development flexibility and efficient workflow in game logic implementation.
+                        </p>
+                        <img src="static/ScriptSystem.png" alt="ScriptSystem" width={1000}/>
                         <h1>Event System</h1>
                         <p>
                         In designing Blu's event system, I tackled the challenge without prior experience in such architectures. My approach involved studying and implementing 
