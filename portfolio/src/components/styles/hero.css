@@ -111,6 +111,9 @@
     width: 150px;
     height: 200px;
 }
+.name{
+    padding-top: 100px;
+}
 .resumeButton button{
     font-family: "EB Garamond", serif;
   

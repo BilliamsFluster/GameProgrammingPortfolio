@@ -9,7 +9,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Projects = () =>{
     const projects = [
-      { title: "Visual Save - UE5 Plugin", description: "Plugin for Unreal Engine that uses steganography to embed save data into images.", imageUrl: "./static/Plugin.png", gifUrl: "https://giphy.com/embed/SgHIRZTdqmCHxDtIB9", path: '/visual-save' },
+      { title: "Visual Save - UE5 Plugin", description: "Plugin for Unreal Engine that uses steganography to embed save data into images.", imageUrl: "./static/Plugin.png", gifUrl: "https://giphy.com/embed/ULsvTxAo58YG9q9BRN", path: '/visual-save' },
       { title: "BLU - Game Engine", description: "Custom game engine with the sole purpose to strengthen lower level skills.", imageUrl: "./static/GameEngine.png", gifUrl: "https://giphy.com/embed/EU1r5BEp9sejttjQGc", path: '/blu' },
       { title: "Avail", description: "Educational application for implementing Gameplay Ability System(GAS) functionality in UE5.", imageUrl: "./static/UnrealEngine.png", gifUrl: "https://giphy.com/embed/OOtW2wcdGoKmRiPAKn", path: "/avail" },
       { title: "Survive The Enemies - Game", description: "Survival game to develop AI, and weapon system knowledge. ", imageUrl: "./static/UnrealEngine.png", gifUrl: "https://giphy.com/embed/UHlKBN2s2nm3aIb1OB", path :'/survive-the-enemies' },

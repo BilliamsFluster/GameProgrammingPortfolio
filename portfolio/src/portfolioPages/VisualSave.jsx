@@ -55,7 +55,7 @@ const VisualSave = () =>
             <div className="visualSaveContainer">
                 <div className="visualSaveContent">
                     <div className="video">
-                        <iframe src= {"https://giphy.com/embed/SgHIRZTdqmCHxDtIB9"}  frameBorder="0" className="gif" allowFullScreen></iframe><p></p>
+                        <iframe src= {"https://giphy.com/embed/ULsvTxAo58YG9q9BRN"}  frameBorder="0" className="gif" allowFullScreen></iframe><p></p>
 
                     </div>
                     <div className="title">
